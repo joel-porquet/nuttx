@@ -58,6 +58,16 @@
 # ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #
 
+echo "*************************************************************************"
+echo "Warning: The workflow for NuttX has changed."
+echo "Please refer to the following Confluence page:"
+echo "https://projectara.atlassian.net/wiki/display/SI/FDK%3A+Workflow+Guide"
+echo ""
+echo "This script is typically replaced by:"
+echo "$ build-fdk.sh nuttx_configure [path/to/mkfile]"
+echo "*************************************************************************"
+exit 1
+
 WD=`pwd`
 TOPDIR="${WD}/.."
 USAGE="

@@ -31,6 +31,16 @@
 # 2015-03-25 - darryln - adapted from nuttx/tools/configure.sh
 # ---------------------------------------------------------------
 
+echo "*************************************************************************"
+echo "Warning: The workflow for NuttX has changed."
+echo "Please refer to the following Confluence page:"
+echo "https://projectara.atlassian.net/wiki/display/SI/FDK%3A+Workflow+Guide"
+echo ""
+echo "This script is typically replaced by:"
+echo "$ build-fdk.sh build [path/to/mkfile|all|all-frame]"
+echo "*************************************************************************"
+exit 1
+
 # define exit error codes
 ARA_BUILD_CONFIG_ERR_BAD_PARAMS=1
 ARA_BUILD_CONFIG_ERR_NO_NUTTX_TOPDIR=2
